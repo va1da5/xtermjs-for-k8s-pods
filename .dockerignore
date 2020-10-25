@@ -1,0 +1,6 @@
+.vscode
+.env
+k8s
+node_modules
+frontent
+sample.env

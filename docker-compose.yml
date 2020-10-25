@@ -1,0 +1,12 @@
+version: "3"
+
+services:
+  xterm:
+    build: .
+    environment:
+      KUBERNETES_HOST: $KUBERNETES_HOST
+      KUBERNETES_NAMESPACE: $KUBERNETES_NAMESPACE
+      KUBERNETES_SERVICE_ACCOUNT_TOKEN: $KUBERNETES_SERVICE_ACCOUNT_TOKEN
+      PORT: 3000
+    ports:
+      - 3000:3000
